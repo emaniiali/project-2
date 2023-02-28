@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/assets/style.css" rel="stylesheet">
     <title>Comics Website</title>
 </head>
+
 <body>
-    Header Layout Page
-    <hr>
     <nav>
         <a href="/">Home</a>
-        <a href="#">List</a>
-        <a href="#">Profile</a>
-        <a href="#">List</a>
-        <button>Sign Up</button>
-        <button>Log In</button>
-        
+        <a href="/comic/all">All Comics</a>
+        <a href="/comic/index">My Comics</a>
+        <a href="/profile/index">Profile</a>
+        <a href="/auth/signin"><button class="HomeBut">Log In</button></a>
+        <a href="/auth/signup"><button class="HomeBut">Sign Up</button></a>
+
     </nav>
-    <div><h1>Comics Website</h1></div>
+    <hr>
     <%- body %>
-    <br><hr>
-    Footer Layout Page
+        <br>
+        <hr>
+        <!-- Footer Layout Page -->
 </body>
+
 </html>

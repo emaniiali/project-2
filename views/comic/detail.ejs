@@ -1,0 +1,32 @@
+<h1>
+    <%= comic.title %>
+</h1>
+
+<div>
+
+</div>
+<img src="/public/uploads/<%= comic.image %>" width="250" height="220px">
+<div>
+    Genre: <%= comic.genre %>
+</div>
+<div>
+    Date publish: <%= comic.datePublished%>
+</div>
+<div>
+    No Episodes: <%= comic.noEpisodes %>
+</div>
+<div>
+    Description: <%= comic.description %>
+</div>
+<div>
+    Completed: <%= comic.completed %>
+</div>
+
+<form action="/comic/all" method="post">
+    <textarea name="review"></textarea>
+    <button type="submit">Add A Review</button>
+    <input type="hidden" value="<%=comic._id%>" name="comic">
+    <!-- <input type="hidden" value="</%=user._id%>" name="user"> -->
+</form>
+
+<!-- DISPLAY ALL REVIEWS BELOW-->

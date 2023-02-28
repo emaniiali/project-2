@@ -1,0 +1,21 @@
+<!-- ALL COMICS BY ALL USERS -->
+<h1>Comic</h1>
+
+<table class="tableStriped">
+    <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Completed</th>
+    </tr>
+
+<% comics.forEach(function(comic){ %> 
+    <tr>
+        <td><img src="/public/uploads/<%= comic.image %>" width="250" height="220px"></td>
+        <td><a href="/comic/detail?id=<%= comic._id %>"><%= comic.title%> </a></td>
+        <td><%= comic.user.name %></td>
+        <td><%= comic.completed %></td>
+        
+    </tr>
+<% }) %>
+</table>
